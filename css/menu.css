@@ -127,7 +127,7 @@ ul {
 
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
     font-size: 16px;
-    color: #8fd81d;
+    color: var(--theme-main);
     font-weight: 500;
     line-height: 1;
     padding: 10px 0;
@@ -150,7 +150,7 @@ ul {
 .header .menu > ul > li .sub-menu > ul > li > a:hover,
 .header .item-right a:hover,
 .header .menu > ul > li:hover > a {
-    color: #8fd81d;
+    color: var(--theme-main);
 }
 
 /* banner section */
@@ -322,7 +322,7 @@ ul {
     text-align: center;
     color: #000000;
     font-size: 25px;
-    background-color: #8fd81d;
+    background-color: var(--theme-main);
 }
 
 .header .menu .menu-main {

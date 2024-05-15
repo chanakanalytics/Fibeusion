@@ -117,7 +117,7 @@ const latest_product_sldier = new Swiper(".latest_product_sldier", {
 
 const recomd_product_slide = new Swiper(".recomd_product_slide", {
     speed: 1000,
-    slidesPerView: 4.5,
+    slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
     autoplay: {
@@ -137,7 +137,7 @@ const recomd_product_slide = new Swiper(".recomd_product_slide", {
             spaceBetween: 30,
         },
         991: {
-            slidesPerView: 3.5,
+            slidesPerView: 4,
             spaceBetween: 30,
         },
     },

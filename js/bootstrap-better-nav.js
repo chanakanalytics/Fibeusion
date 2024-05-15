@@ -46,7 +46,7 @@ function hideSubMenu() {
     setTimeout(() => {
         subMenu.classList.remove("active");
     }, 300);
-    menu.querySelector(".current-menu-title").innerHTML = "<img src='img/footer_logo.png'/>";
+    menu.querySelector(".current-menu-title").innerHTML = "<img src='img/logo.png'/>";
     menu.querySelector(".mobile-menu-head").classList.remove("active");
 }
 
