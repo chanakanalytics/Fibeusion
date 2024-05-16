@@ -203,13 +203,12 @@ a:hover {
 }
 
 .navbar-brand img {
-    height: 50px;
+    height: 60px;
 }
 
 .main_nav_section .navbar-nav li a {
     color: #000;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: 500;
     padding: 5px 20px !important;
     position: relative;
@@ -311,11 +310,23 @@ a:hover {
     outline-offset: 5px;
     transition: ease-in all 0.3s;
     font-weight: 500;
+    border-radius: 5px
 }
 
 .banner_btn:hover {
     outline-offset: 0px;
     transition: ease-in all 0.3s
+}
+
+.her_btn_group {
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+}
+
+.her_btn_group span {
+    cursor: pointer;
+    margin-left: 20px
 }
 
 /* ------------------------------------------------------------ *\
@@ -397,10 +408,9 @@ a:hover {
 }
 
 .chain-text {
-    margin: 50px;
     background: #fff;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 20%);
-    padding: 40px 60px;
+    padding: 60px 60px;
     border-radius: 150px;
 }
 
@@ -475,20 +485,20 @@ a:hover {
 }
 
 .usees_item:hover .uses_single_item img {
-    opacity: 0.2;
-    transition: ease-in all 0.3s
+    transition: ease-in all 1s;
+    filter: blur(5px)
 }
 
 .usees_item:hover .uses_single_item img.opaque {
-    opacity: 1 !important;
-    transition: ease-in all 0.3s
+    filter: blur(0) !important;
+    transition: ease-in all 1s
 }
 
 
 .usees_item li {
     overflow: hidden;
     border: 2px solid var(--theme-main);
-    transition: ease-in all 0.3s
+    transition: ease-in all 1s
 }
 
 
@@ -650,28 +660,28 @@ a:hover {
     counter-reset: blog-counter;
 }
 
+.blog_arrow_wrapper {
+    gap: 20px
+}
+
 .latest_news_slide_next {
-    position: absolute;
-    background-color: var(--theme-main);
+    border: 1px solid var(--theme-main);
     height: 45px;
     width: 45px;
     line-height: 45px;
     border-radius: 50px;
-    bottom: 0%;
     text-align: center;
-    right: 7%;
+    color: var(--theme-main);
 }
 
 .latest_news_slide_prev {
-    position: absolute;
-    background-color: var(--theme-main);
+    border: 1px solid var(--theme-main);
     height: 45px;
     width: 45px;
     line-height: 45px;
     border-radius: 50px;
-    bottom: 0%;
     text-align: center;
-    right: 12%;
+    color: var(--theme-main)
 }
 
 .blog_image {
@@ -804,7 +814,9 @@ a:hover {
 
 .extra_contact_inner p {
     line-height: 35px;
-    margin-bottom: 25px
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: var(--heading-font)
 }
 
 /*************************************************/
@@ -856,7 +868,7 @@ a:hover {
 }
 
 .footer_logo_part ul li a {
-    color: #fff;
+    color: #30B882;
 }
 
 .footer_logo_part {
@@ -896,7 +908,8 @@ a:hover {
 }
 
 .footer_abt a {
-    color: var(--theme-main);
+    color: #27C686;
+    font-weight: 500
 }
 
 .newsletter_sec {
@@ -932,7 +945,8 @@ a:hover {
 .newsletter_cont h4 {
     color: #fff;
     font-size: 30px;
-    font-family: var(--heading-font)
+    font-family: var(--heading-font);
+    font-weight: 600
 }
 
 .newsletter_inner button {
@@ -1147,6 +1161,7 @@ a:hover {
     padding: 15px;
     margin-bottom: 30px;
     transition: ease-in all 0.3s;
+    background-color: #fff
 }
 
 .single_product_card:hover {
@@ -1178,7 +1193,7 @@ a:hover {
 .product_img_wrapper img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .add_to_cart_button {

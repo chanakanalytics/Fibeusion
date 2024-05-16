@@ -90,7 +90,7 @@ const latest_product_sldier = new Swiper(".latest_product_sldier", {
     speed: 1000,
     slidesPerView: 5,
     spaceBetween: 30,
-    loop: false,
+    loop: true,
     centeredSlides: true,
     autoplay: {
         delay: 2000,
