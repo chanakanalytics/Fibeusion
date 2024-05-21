@@ -320,7 +320,7 @@ ul {
     cursor: pointer;
     line-height: 80px;
     text-align: center;
-    color: #000000;
+    color: #fff;
     font-size: 25px;
     background-color: var(--theme-main);
 }
