@@ -774,7 +774,7 @@ get_header('', array('description' => '', 'title' => '', 'page' => 'home'));
                                         <h4>User</h4>
                                         <ul>
                                             <li><a href="#">Home</a></li>
-                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="<?php echo get_site_url();?>/about-us/">About Us</a></li>
                                             <li><a href="#">Shop</a></li>
                                             <li><a href="#">My Account</a></li>
                                             <li><a href="#">Contact Us</a></li>

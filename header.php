@@ -69,7 +69,7 @@
                         <a href="<?php echo get_site_url();?>">Home</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="<?php echo get_site_url();?>/about-us/">About Us</a>
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#">All Category <i class="fa fa-angle-down"></i></a>
@@ -155,7 +155,7 @@
                             <a class="nav-link <?php echo $args['page'] == 'home' ? 'active' : ''; ?>" aria-current="page" href="<?php echo get_site_url();?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="<?php echo get_site_url();?>/about-us/">About Us</a>
                         </li>
                         <li class="nav-item dropdown dropdown-mega position-static">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
