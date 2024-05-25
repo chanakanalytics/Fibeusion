@@ -406,7 +406,7 @@ a:hover {
 /********************************************************/
 
 .abt_sec {
-    padding-top: 80px;
+    padding: 80px 0;
 }
 
 .abt_content h4,
@@ -1130,7 +1130,7 @@ a:hover {
 
 .testimonial_slider .swiper-slide.swiper-slide-active .single_swiper {
     border-color: var(--theme-main);
-    box-shadow: 0px 4px 30px rgba(143, 216, 29, 0.4) !important;
+    box-shadow: 0px 4px 30px rgb(21 123 29 / 40%) !important;
 }
 
 .testimonial_slider_next {
@@ -1143,7 +1143,7 @@ a:hover {
     text-align: center;
     line-height: 50px;
     border-radius: 50px;
-    color: #000;
+    color: #fff;
     background-color: var(--theme-main);
     z-index: 99;
 }
@@ -1158,7 +1158,7 @@ a:hover {
     text-align: center;
     line-height: 50px;
     border-radius: 50px;
-    color: #000;
+    color: #fff;
     background-color: var(--theme-main);
     z-index: 99;
 }
@@ -1960,12 +1960,13 @@ a:hover {
     display: inline-block;
     font-size: 80px;
     color: transparent;
-    font-family: var(--monster-font);
-    -webkit-text-stroke: 1px var(--theme-main);
+    font-family: var(--body-font);
+    -webkit-text-stroke: 1px #ffffff;
     position: absolute;
     top: -30px;
     right: 30px;
     z-index: 1;
+    font-weight: 900;
 }
 
 .single_process img {
@@ -2029,7 +2030,7 @@ a:hover {
 /**********Mission Section*************/
 
 .mission_section {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .mission_img {
@@ -2037,21 +2038,20 @@ a:hover {
 }
 
 .mission_img img {
-    border-radius: 15px;
     position: relative;
+    border-radius: 15px
 }
 
 .mission_img::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -15px;
+    left: 15px;
     height: 100%;
     width: 100%;
     background-color: var(--theme-main);
-    transform: rotate(-4deg);
     z-index: -1;
-    border-radius: 15px;
+    border-radius: 15px
 }
 
 .our_mission_part {
@@ -2059,7 +2059,7 @@ a:hover {
     border: 1px solid var(--theme-main);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 10px 12px 20px rgb(143 216 29 / 24%);
+    box-shadow: 10px 12px 20px rgb(30 129 18 / 24%);
 }
 
 .our_mission_part img {
@@ -2155,3 +2155,212 @@ a:hover {
 /*************************************************/
 /****cta Section***/
 /*************************************************/
+
+.abt_title h4 {
+    font-size: 50px;
+    font-weight: 600
+}
+
+.abt_title h4 span {
+    color: var(--golden);
+    font-weight: 600
+}
+
+.abt_content p {
+    line-height: 30px
+}
+
+.banner_video {
+    padding: 350px 0
+}
+
+.abt_img {
+    position: relative;
+    padding: 50px
+}
+
+.abt_img::before {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 25px;
+    height: 80%;
+    width: 80%;
+    background-color: var(--theme-main);
+    border-radius: 15px
+}
+
+.abt_img::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid var(--theme-main);
+    z-index: 999;
+    border-radius: 15px
+}
+
+.abt_btn {
+    padding: 10px 30px;
+    color: #fff !important;
+    background-color: var(--theme-main);
+    display: inline-block;
+    border-radius: 10px
+}
+
+
+.abt_img img {
+    position: relative;
+    width: 100%;
+    border-radius: 15px
+}
+
+.abt_content {
+    padding-right: 50px
+}
+
+
+
+/*Contact Us style sheet*/
+
+.contact_sec {
+    background-color: #f8f8f8;
+    padding: 100px 0px;
+}
+
+.contact_info_single {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 50px 20px 20px 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    min-height: 180px;
+}
+
+.contact_info_single h4 {
+    font-size: 20px;
+    font-family: var(--body-font);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.contact_info_single p {
+    font-size: 17px;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 400
+}
+
+.contact_info_single:hover {
+    border-color: var(--theme-main)
+}
+
+.info_icon {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 25px;
+    color: var(--golden);
+    top: -35px;
+    transition: ease-in all 0.3s;
+}
+
+.contact_info_single:hover .info_icon {
+    background-color: var(--theme-main);
+    color: #fff;
+    transition: ease-in all 0.3s;
+}
+
+.conatct_form h4 {
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.conatct_form .form-control {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.conatct_form textarea {
+    height: 130px !important;
+}
+
+.conatct_form_sec {
+    padding: 80px 0px;
+}
+
+button.Send_btn {
+    background-color: #076fa9;
+    color: #fff;
+    border: none;
+    padding: 13px 70px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.map_inner {
+    margin-top: 70px;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.map_inner {
+    margin-top: 70px;
+    box-shadow: 4px 9px 74px #ccc;
+}
+
+.conatct_form_sec .form_title h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 600
+}
+
+
+/******************home contact sec****************************/
+.trend_input {
+    width: 100%;
+    box-shadow: -6px 6px 17px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px
+}
+
+textarea.trend_input {
+    height: 150px;
+
+}
+
+.trend_input:focus {
+    outline: 2px solid var(--theme-main);
+}
+
+.submit_btn {
+    width: 100%;
+    background-color: var(--theme-main);
+    color: #fff;
+    padding: 13px;
+    border: none;
+    transition: ease-in all 0.3s;
+    border-radius: 10px
+}
+
+.submit_btn:hover {
+    background-color: #000;
+    transition: ease-in all 0.3s;
+}
